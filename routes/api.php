@@ -38,7 +38,7 @@ Route::put('articles/{id}', function(Request $request, $id) {
 });
 
 Route::delete('articles/{id}', function($id) {
-    Article::find($id)->delete();
+    Article::find($id);
 
     return 204;
 });
